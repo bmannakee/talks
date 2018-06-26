@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1529880530758.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4D75288E",
+    "lastKnownWriteTime" : 1529966840,
+    "last_content_update" : 1529966840,
+    "path" : "~/Desktop/talks/compositional_data_methods/libs/remark-css/default.css",
+    "project_path" : "libs/remark-css/default.css",
+    "properties" : {
+        "cursorPosition" : "23,10",
+        "marks" : "<:0,0\n>:0,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "css"
+}

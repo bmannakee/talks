@@ -1,0 +1,114 @@
+---
+title: "Two-sample tests of high-dimensional <br /> means for compositional data"
+subtitle: "YUANPEI CAO, WEI LIN, HONGZHE LI"
+author: "Brian Mannakee <br /> Department of Biostatistics and Epidemiology <br /> Mel and Enid Zuckerman College of Public Health"
+output:
+  xaringan::moon_reader:
+    css: ["default","ua-theme.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+layout: true
+background-image: url(UA.png)
+background-size: 10%
+background-position: right 10px bottom 10px
+
+---
+
+# Outline
+- Compositional data
+     - definition
+     - applications
+- Description of the method
+- Results
+- Discussion
+- An original application (time permitting)
+
+---
+
+# What is compositional data?
+## And why can't we just do a standard two-sample multivariate t-test?
+
+.pull-left[
+<img src="fig1.png"/>
+]
+
+.pull-right[
+
+- Compositional data is any data vector whose sum is constrained to be equal to one and whose members are non-negative.
+
+- The constraint generates a strong correlation between data points in the multivariate setting and confounds traditional statistical methods (Aitchison, 2003)
+
+- This paper in particular focuses on the scaling problem, which arises from the fact that a $p$-dimensional compositional vector lies on a $p-1$ dimensional hyperplane.
+]
+---
+
+# What is compositional data?
+## And why can't we just do a standard two-sample multivariate t-test?
+
+.pull-left[
+<img src="fig1.png"/>
+]
+
+.pull-right[
+- For any given vector $V$ of raw counts that generates a composition with a given coordinate on the hyperplane, there are an infinite number of other vectors $cV$ $\{c:c \in \mathbb{R}\}$, that generate that same coordinate.
+
+- As a result, a multivariate test for differences in means can find significant differences between vectors that generate identical compositions (i.e. they are compositionally equivalent)
+
+]
+
+---
+ 
+# What sorts of processes generate compositions?
+### Mixing processes
+- Gas mixtures
+- Chemical reactions
+
+### Count data, where the counts are only useful as estimates of fraction of total abundance
+- Gene expression (always relative)
+     - RNAseq
+     - Arrays
+- Microbiomes
+     
+### BONUS! compositions of compositions!!!
+- Document topic modelling and classification
+- Mutational process signatures in cancer genomes (my jam)
+
+---
+
+# A testable hypothesis of compositional equivalence
+
+Suppose we have data matrices
+
+$$X^{(k)} = (X^{(k)}_1, \dots, X^{(k)}_{n_k})$$
+for groups $(k=1,2)$ such that
+$$\{(x_1, \dots, x_p) : x_j \gt 0 \;\; (j = 1, \dots, p), \quad \sum_{j=1}^p x_j = 1\}$$
+i.e, a matrix of compositions. Assume these compositions arise from some vector of latent variables that represent the true abundance of the things we are measuring, such that
+$$X_{ij}^{(k)} = W_{ij}^{(k)} \Big/ \sum_{l=1}^p W_{il}^{(k)} \quad (i = 1, \dots, n_k;\; j=1, \dots, p;\; k= 1,2)$$
+is the component-wise relationship between $X^{(k)}$ and the variable of interest $W^{(k)}$.
+
+The goal is to determine, using the measured quantities $X^{(k)}$, whether the $W^{(k)}$ are samples from distributions with different means. In other words, is there a difference between the distributions of groups 1 and 2. 
+
+---
+
+# A testable hypothesis of compositional equivalence
+### A traditional multivariate t-test approach fails
+Suppose the $W^{(k)}$ are independent samples, each from a distribution with mean vector $\mu_k = E(W_1^{(k)}) \; (k=1,2)$ and common covariance matrix $\Omega$. We would like to test the hypotheses
+$$H_0: \; \mu_1 = \mu_2 \quad \textrm{versus} \quad H_1: \; \mu_1 \ne \mu_2.$$ 
+
+The scaling problem we have already discussed means we can not actually test this hypothesis through the observed $X^{(k)}$. Instead we could test for compositional equivalence using the hypotheses
+
+$$H_0: \; \mu_1 = c\mu_2\; \textrm{for some} \;c \in \mathbb{R}  \quad \textrm{versus} \quad H_1: \; \mu_1 \ne c\mu_2\; \textrm{for any}\; c \in \mathbb{R}.$$
+Unfortunately, rejecting $H_0$ here does not imply rejecting $E(X_1^{(1)}) = E(X_1^{(2)})$ because of the scaling factor, and thus does not lead to biological interpretations in terms of the underlying distributions.
+
+---
+# A testable hypothesis of compositional equivalence
+
+### The centered log-ratio transform and an equivalent hypothesis

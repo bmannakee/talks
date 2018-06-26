@@ -1,0 +1,14 @@
+---
+title: "Two-sample tests of high dimensional means for compositional data"
+author: "Brian Mannakee"
+date: "6/24/2018"
+output: 
+     beamer_presentation:
+          template: UAthemeEX.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Slide 1

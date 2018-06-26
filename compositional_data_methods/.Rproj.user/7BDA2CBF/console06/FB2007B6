@@ -1,0 +1,577 @@
+]0;~/Desktop/talks/compositional_data_methods[?1034hBrians-MacBook-Air:compositional_data_methods bmannakee$ [KBrians-MacBook-Air:compositional_data_methods bmannakee$ cd ..
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ ls
+UA_beamer_slides		compositional_data_methods
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ cp UA_beamer_slides/* compositional_data_methods/
+cp: UA_beamer_slides/Output is a directory (not copied).
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ cp UA_beamer_slides/* compositional_data_methods/[1@i[1@[[1P[1P[1@-[1@r[1@ 
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ gh[K[K[KBrians-MacBook-Air:talks bmannakee$ [KBrians-MacBook-Air:talks bmannakee$ [KBrians-MacBook-Air:talks bmannakee$ cp UR[KA_beamer_slides/*.sty [K compositional_data_methods/
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ cp UA_beamer_slides/*.sty compositional_data_methods/[1P compositional_data_methods/[1P compositional_data_methods/[1P compositional_data_methods/p compositional_data_methods/n compositional_data_methods/g compositional_data_methods/
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ [KBrians-MacBook-Air:talks bmannakee$ cd compositional_data_methods/
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ vim my-slides.css
+[?2004h]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ cp ../UA_beamer_slides/_[K*.png .
+ls
+UA.png					summer_jc_18.Rmd
+UAgrey.png				summer_jc_18.html
+compositional_data_methods.Rproj	summer_jc_18_files
+fig1.png				ua1.png
+libs					ua2.png
+my-slides.css				ua3.png
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ mv _.[K[K*.png ..[K[K[K[K[K[K[K[K[K[K[Kmkdir ../resourd[Kces
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ cp *.png ../resources/
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ cp [K[K[Kmv my-slides.css ../resources/my-sli[Kide [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Ktheme _[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[KU[Kua_theme [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K0[K=[K-theme .css
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ mv ../resources/ua-theme.css .
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ mv ../resources/ua-theme.css .[1P .[1P .[1P .[1P .[1P .[1P .[1P .[1P .[1P .[1P .[1P .[1P .f .i .g .1.png .
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ [KBrians-MacBook-Air:compositional_data_methods bmannakee$ git inti
+git: 'inti' is not a git command. See 'git --help'.
+
+The most similar command is
+	init
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ git inti[K[Kit
+Initialized empty Git repository in /Users/bmannakee/Desktop/talks/compositional_data_methods/.git/
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ git add .
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ git set [K[K[K[K0[K--set-upstream [K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kclos[Kne https://github.com/bmannakee/talks.git
+Cloning into 'talks'...
+remote: Counting objects: 3, done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ ls
+UA.png					summer_jc_18.Rmd			ua1.png
+UAgrey.png				summer_jc_18.html			ua2.png
+compositional_data_methods.Rproj	summer_jc_18_files			ua3.png
+fig1.png				talks
+libs					ua-theme.css
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ rm -rf talks
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ cd ..
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ ls
+UA_beamer_slides		compositional_data_methods	resources
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ cd ..
+]0;~/DesktopBrians-MacBook-Air:Desktop bmannakee$ ls
+092890.full.pdf								Screen Shot 2018-05-03 at 9.43.24 AM.png
+1-s2.0-S1535610817302970-main.pdf					Screen Shot 2018-05-03 at 9.58.10 AM.png
+2015policydeclaration.pdf						Screen Shot 2018-05-03 at 9.58.56 AM.png
+2015policyestablishment.pdf						Screen Shot 2018-06-20 at 4.43.16 PM.png
+2016renewal.pdf								Screen Shot 2018-06-24 at 5.38.47 PM.png
+2017renewal.pdf								Screen Shot 2018-06-24 at 5.38.55 PM.png
+Arizona Department of Revenue.pdf					Staples Scan 08-19-2016_17-14-223.pdf
+EBGibbs.pdf								ViewActvReport.pdf
+Field_2005.pdf								WirelessDiagnostics_C02M31Y9F6T5_2017-11-13_10.52.44.tar.gz
+Genome Res.-2015-Amendola-305-15.pdf					ajp2016_xenograft.pdf
+Genome Res.-2015-Kim-316-27.pdf						aob.rtf
+IMG_1196.JPG								architecture.txt
+IMG_1320.JPG								architecture.txt.gz
+IMG_1321.JPG								comps
+IMG_1324.JPG								current.pdf
+Intercoat_Chemguard Mill Final Presentation 6-8-17 w-o animation-1.pptx	dacl_1021129.pdf
+Intercoat_Chemguard Mill Final Presentation 6-8-17 w-o animation.pptx	dissertation
+Journal_club_2016.pdf							dividing_cells.jpg
+LaySummaryRevised.txt							dividing_cells.pdf
+MAPEX_Figure1 - Page 1.png						dynevol_plos.pdf
+Mannakee.pdf								egadownload.o1234990
+MannakeeCV.pdf								egadownload.o1234990.gz
+MannakeeCV2017.pdf							git_contrib
+MannakeeGAform.PDF							grch38.bed
+Mannakee_Assignment09122016.pages					human.varscan.snp
+NIPS2009_0929.pdf							icgc_app
+NSF2016SignaturePage.PDF						icgc_app_lay_description.rtf
+Presentation1.pdf							image001.jpg
+Receipt Page - Pay1040.com.pdf						image001.png
+RyanTenureLetter.pages							image002.png
+RyanTenureLetter.pdf							image003.png
+Screen Shot 2016-06-02 at 4.58.37 PM.png				image004.png
+Screen Shot 2016-06-02 at 4.58.57 PM.png				image005.png
+Screen Shot 2016-06-02 at 5.00.05 PM.png				jeffstuff.rtf
+Screen Shot 2016-08-31 at 1.40.01 PM.png				mannakee_talk_abstract.rtf
+Screen Shot 2017-10-04 at 12.36.17 PM.png				mapex_collab
+Screen Shot 2017-10-11 at 9.26.35 AM.png				megha.pdf
+Screen Shot 2017-10-11 at 9.27.51 AM.png				mutation_rate_evolution_talk_rev1.pptx
+Screen Shot 2018-03-28 at 9.24.02 AM.png				mutation_rate_evolution_talk_rev2.pptx
+Screen Shot 2018-05-03 at 10.09.14 AM.png				mutation_rate_evolution_talk_rev3.pptx
+Screen Shot 2018-05-03 at 10.10.35 AM.png				mutation_rate_evolution_talk_rev4.pptx
+Screen Shot 2018-05-03 at 11.31.30 AM.png				nested_domains.txt
+Screen Shot 2018-05-03 at 11.35.54 AM.png				nested_domains.txt.gz
+Screen Shot 2018-05-03 at 11.36.29 AM.png				nihms-715090.pdf
+Screen Shot 2018-05-03 at 11.38.53 AM.png				nihms825460.pdf
+Screen Shot 2018-05-03 at 11.49.38 AM.png				nsfprogess2016.rtf
+Screen Shot 2018-05-03 at 12.39.59 PM.png				oral_comp.pptx
+Screen Shot 2018-05-03 at 12.41.32 PM.png				profile_pic.JPG
+Screen Shot 2018-05-03 at 12.42.57 PM.png				projects
+Screen Shot 2018-05-03 at 12.43.43 PM.png				rnaseq_deconv.pdf
+Screen Shot 2018-05-03 at 8.44.18 AM.png				scratch
+Screen Shot 2018-05-03 at 8.46.04 AM.png				talks
+Screen Shot 2018-05-03 at 9.07.15 AM.png				thoughts_for_ryan.rtf
+]0;~/DesktopBrians-MacBook-Air:Desktop bmannakee$ cd talks
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git init [K
+Initialized empty Git repository in /Users/bmannakee/Desktop/talks/.git/
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git --set-upstream origin master[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kremotes[K add origin master https://github.com/bmannakee/talks.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git add .
+warning: adding embedded git repository: UA_beamer_slides
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> UA_beamer_slides
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached UA_beamer_slides
+hint: 
+hint: See "git help submodule" for more information.
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git commit -m'initial commit'
+[master (root-commit) 18827ae] initial commit
+ 321 files changed, 22034 insertions(+)
+ create mode 160000 UA_beamer_slides
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/console06/FB2007B6
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/console06/FB2007B6.env
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/console06/INDEX001
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/pcs/files-pane.pper
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/pcs/source-pane.pper
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/pcs/windowlayoutstate.pper
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/pcs/workbench-pane.pper
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/persistent-state
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/presentation/presentation-state-v2
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/rmd-outputs
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/saved_source_markers
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/prop/1949842F
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/prop/38BFD497
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/prop/38C61200
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/prop/4414B7AE
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/prop/4421C523
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/prop/8902681F
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/prop/9D0E7A30
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/prop/C5352E66
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/prop/E1ED66D1
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/prop/E27F489E
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/prop/FF2C9CEF
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/prop/INDEX
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/1171A61-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/43C31813-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/4B7E3BB6
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/4B7E3BB6-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/4D75288E
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/4D75288E-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/66403FE7-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/6BC45C76-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/7B33A923-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/835E76A5-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/8AC3593C-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/8B5EE6EB-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/90438588-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/9F6C729-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/A4A5F57C-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/B613A10D
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/B613A10D-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/CFE24B0D-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/FB3F9BCC-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/FF399B25-contents
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/sources/s-763C2274/lock_file
+ create mode 100644 compositional_data_methods/.Rproj.user/7BDA2CBF/unsaved-notebooks/B613A10D/1/chunks.json
+ create mode 100644 compositional_data_methods/.Rproj.user/shared/notebooks/267B97D4-summer_jc_18/1/7BDA2CBF763C2274/chunks.json
+ create mode 100644 compositional_data_methods/.Rproj.user/shared/notebooks/267B97D4-summer_jc_18/1/s/chunks.json
+ create mode 100644 compositional_data_methods/.Rproj.user/shared/notebooks/BEBBE751-summer_jc_2018/1/s/chunks.json
+ create mode 100644 compositional_data_methods/.Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 compositional_data_methods/.Rproj.user/shared/notebooks/paths
+ create mode 100644 compositional_data_methods/UA.png
+ create mode 100644 compositional_data_methods/UAgrey.png
+ create mode 100644 compositional_data_methods/compositional_data_methods.Rproj
+ create mode 100644 compositional_data_methods/fig1.png
+ create mode 100644 compositional_data_methods/libs/Proj4Leaflet/proj4-compressed.js
+ create mode 100644 compositional_data_methods/libs/Proj4Leaflet/proj4leaflet.js
+ create mode 100644 compositional_data_methods/libs/crosstalk/css/crosstalk.css
+ create mode 100644 compositional_data_methods/libs/crosstalk/js/crosstalk.js
+ create mode 100644 compositional_data_methods/libs/crosstalk/js/crosstalk.js.map
+ create mode 100644 compositional_data_methods/libs/crosstalk/js/crosstalk.min.js
+ create mode 100644 compositional_data_methods/libs/crosstalk/js/crosstalk.min.js.map
+ create mode 100644 compositional_data_methods/libs/datatables-binding/css/datatables-crosstalk.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/datatables.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/datatables.yaml
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/AutoFill/css/autoFill.bootstrap.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/AutoFill/css/autoFill.bootstrap4.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/AutoFill/css/autoFill.dataTables.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/AutoFill/css/autoFill.foundation.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/AutoFill/css/autoFill.jqueryui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/AutoFill/css/autoFill.semanticui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/AutoFill/js/autoFill.bootstrap.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/AutoFill/js/autoFill.bootstrap4.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/AutoFill/js/autoFill.foundation.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/AutoFill/js/autoFill.jqueryui.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/AutoFill/js/autoFill.semanticui.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/AutoFill/js/dataTables.autoFill.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/css/buttons.bootstrap.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/css/buttons.bootstrap4.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/css/buttons.dataTables.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/css/buttons.foundation.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/css/buttons.jqueryui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/css/buttons.semanticui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/js/buttons.bootstrap.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/js/buttons.bootstrap4.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/js/buttons.colVis.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/js/buttons.flash.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/js/buttons.foundation.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/js/buttons.html5.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/js/buttons.jqueryui.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/js/buttons.print.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/js/buttons.semanticui.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/js/dataTables.buttons.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/js/jszip.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/js/pdfmake.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/js/vfs_fonts.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Buttons/swf/flashExport.swf
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/ColReorder/css/colReorder.bootstrap.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/ColReorder/css/colReorder.bootstrap4.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/ColReorder/css/colReorder.dataTables.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/ColReorder/css/colReorder.foundation.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/ColReorder/css/colReorder.jqueryui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/ColReorder/css/colReorder.semanticui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/ColReorder/js/dataTables.colReorder.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedColumns/css/fixedColumns.bootstrap.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedColumns/css/fixedColumns.bootstrap4.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedColumns/css/fixedColumns.dataTables.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedColumns/css/fixedColumns.foundation.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedColumns/css/fixedColumns.jqueryui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedColumns/css/fixedColumns.semanticui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedColumns/js/dataTables.fixedColumns.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedHeader/css/fixedHeader.bootstrap.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedHeader/css/fixedHeader.bootstrap4.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedHeader/css/fixedHeader.dataTables.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedHeader/css/fixedHeader.foundation.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedHeader/css/fixedHeader.jqueryui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedHeader/css/fixedHeader.semanticui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/FixedHeader/js/dataTables.fixedHeader.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/KeyTable/css/keyTable.bootstrap.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/KeyTable/css/keyTable.bootstrap4.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/KeyTable/css/keyTable.dataTables.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/KeyTable/css/keyTable.foundation.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/KeyTable/css/keyTable.jqueryui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/KeyTable/css/keyTable.semanticui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/KeyTable/js/dataTables.keyTable.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Responsive/css/responsive.bootstrap.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Responsive/css/responsive.bootstrap4.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Responsive/css/responsive.dataTables.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Responsive/css/responsive.foundation.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Responsive/css/responsive.jqueryui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Responsive/css/responsive.semanticui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Responsive/js/dataTables.responsive.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Responsive/js/responsive.bootstrap.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Responsive/js/responsive.bootstrap4.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Responsive/js/responsive.foundation.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Responsive/js/responsive.jqueryui.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Responsive/js/responsive.semanticui.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowGroup/css/rowGroup.bootstrap.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowGroup/css/rowGroup.bootstrap4.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowGroup/css/rowGroup.dataTables.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowGroup/css/rowGroup.foundation.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowGroup/css/rowGroup.jqueryui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowGroup/css/rowGroup.semanticui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowGroup/js/dataTables.rowGroup.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowReorder/css/rowReorder.bootstrap.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowReorder/css/rowReorder.bootstrap4.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowReorder/css/rowReorder.dataTables.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowReorder/css/rowReorder.foundation.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowReorder/css/rowReorder.jqueryui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowReorder/css/rowReorder.semanticui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/RowReorder/js/dataTables.rowReorder.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Scroller/css/scroller.bootstrap.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Scroller/css/scroller.bootstrap4.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Scroller/css/scroller.dataTables.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Scroller/css/scroller.foundation.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Scroller/css/scroller.jqueryui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Scroller/css/scroller.semanticui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Scroller/js/dataTables.scroller.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Select/css/select.bootstrap.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Select/css/select.bootstrap4.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Select/css/select.dataTables.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Select/css/select.foundation.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Select/css/select.jqueryui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Select/css/select.semanticui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-extensions/Select/js/dataTables.select.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-plugins/natural/natural.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-plugins/searchHighlight/dataTables.searchHighlight.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-plugins/searchHighlight/dataTables.searchHighlight.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables-plugins/searchHighlight/jquery.highlight.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/css/dataTables.bootstrap.extra.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/css/dataTables.bootstrap.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/css/dataTables.bootstrap4.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/css/dataTables.foundation.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/css/dataTables.jqueryui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/css/dataTables.material.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/css/dataTables.semanticui.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/css/dataTables.uikit.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/css/jquery.dataTables.extra.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/css/jquery.dataTables.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/js/dataTables.bootstrap.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/js/dataTables.bootstrap4.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/js/dataTables.foundation.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/js/dataTables.jqueryui.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/js/dataTables.material.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/js/dataTables.semanticui.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/js/dataTables.uikit.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/js/jquery.dataTables.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/datatables/license.txt
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/jquery/LICENSE.txt
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/jquery/jquery.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/nouislider/jquery.nouislider.min.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/nouislider/jquery.nouislider.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/selectize/selectize.bootstrap3.css
+ create mode 100644 compositional_data_methods/libs/datatables-binding/lib/selectize/selectize.min.js
+ create mode 100644 compositional_data_methods/libs/datatables-css/datatables-crosstalk.css
+ create mode 100644 compositional_data_methods/libs/dt-core/css/jquery.dataTables.extra.css
+ create mode 100644 compositional_data_methods/libs/dt-core/css/jquery.dataTables.min.css
+ create mode 100644 compositional_data_methods/libs/dt-core/js/jquery.dataTables.min.js
+ create mode 100644 compositional_data_methods/libs/htmlwidgets/htmlwidgets.js
+ create mode 100644 compositional_data_methods/libs/jquery/jquery.min.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/leaflet.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/leaflet.yaml
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/jquery/jquery.min.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/images/cancel.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/images/cancel_@2X.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/images/check.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/images/check_@2X.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/images/focus.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/images/focus_@2X.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/images/rulers.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/images/rulers_@2X.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/images/start.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/images/start_@2X.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/images/trash.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/images/trash_@2X.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/leaflet-measure.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-measure/leaflet-measure.min.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-omnivore/LICENSE
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-omnivore/index.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-omnivore/leaflet-omnivore.min.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-omnivore/package.json
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-providers/leaflet-providers.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-providers/package.json
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-providers/providers.json
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet-providers/rstudio_install.md
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet/images/layers-2x.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet/images/layers.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet/images/marker-icon-2x.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet/images/marker-icon.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet/images/marker-shadow.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet/leaflet.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leaflet/leaflet.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/leafletfix/leafletfix.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/rstudio_leaflet/images/1px.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/lib/rstudio_leaflet/rstudio_leaflet.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet-MiniMap/Control.MiniMap.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet-MiniMap/Control.MiniMap.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet-MiniMap/Control.MiniMap.min.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet-MiniMap/Control.MiniMap.min.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet-MiniMap/Minimap-binding.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet-MiniMap/images/toggle.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet-MiniMap/images/toggle.svg
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.EasyButton/EasyButton-binding.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.EasyButton/LICENSE
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.EasyButton/easy-button.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.EasyButton/easy-button.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.Graticule/Graticule-binding.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.Graticule/L.Graticule.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.Graticule/Leaflet.Graticule.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.SimpleGraticule/L.SimpleGraticule.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.SimpleGraticule/L.SimpleGraticule.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.SimpleGraticule/SimpleGraticule-binding.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.Terminator/L.Terminator.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.Terminator/Terminator-binding.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/bootstrap-theme.min.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/bootstrap.min.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/bootstrap.min.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/font-awesome.min.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/fonts/FontAwesome.otf
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/fonts/fontawesome-webfont.eot
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/fonts/fontawesome-webfont.svg
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/fonts/fontawesome-webfont.ttf
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/fonts/fontawesome-webfont.woff
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/fonts/glyphicons-halflings-regular.eot
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/fonts/glyphicons-halflings-regular.svg
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/fonts/glyphicons-halflings-regular.ttf
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/fonts/glyphicons-halflings-regular.woff
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/fonts/ionicons.eot
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/fonts/ionicons.svg
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/fonts/ionicons.ttf
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/fonts/ionicons.woff
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/images/markers-matte.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/images/markers-matte@2x.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/images/markers-plain.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/images/markers-shadow.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/images/markers-shadow@2x.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/images/markers-soft.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/images/markers-soft@2x.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/ionicons.min.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/leaflet.awesome-markers.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/leaflet.awesome-markers.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.awesome-markers/leaflet.awesome-markers.min.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.markercluster/MIT-LICENCE.txt
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.markercluster/MarkerCluster.Default.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.markercluster/MarkerCluster.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.markercluster/leaflet.markercluster.freezable.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.markercluster/leaflet.markercluster.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.markercluster/leaflet.markercluster.layersupport.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Leaflet.markercluster/package.json
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Proj4Leaflet/proj4-compressed.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/Proj4Leaflet/proj4leaflet.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/leaflet-locationfilter/img/filter-icon.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/leaflet-locationfilter/img/move-handle.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/leaflet-locationfilter/img/resize-handle.png
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/leaflet-locationfilter/locationfilter-bindings.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/leaflet-locationfilter/locationfilter.css
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/leaflet-locationfilter/locationfilter.js
+ create mode 100644 compositional_data_methods/libs/leaflet-binding/plugins/leaflet-providers-plugin/leaflet-providers-plugin.js
+ create mode 100644 compositional_data_methods/libs/leaflet/images/layers-2x.png
+ create mode 100644 compositional_data_methods/libs/leaflet/images/layers.png
+ create mode 100644 compositional_data_methods/libs/leaflet/images/marker-icon-2x.png
+ create mode 100644 compositional_data_methods/libs/leaflet/images/marker-icon.png
+ create mode 100644 compositional_data_methods/libs/leaflet/images/marker-shadow.png
+ create mode 100644 compositional_data_methods/libs/leaflet/leaflet.css
+ create mode 100644 compositional_data_methods/libs/leaflet/leaflet.js
+ create mode 100644 compositional_data_methods/libs/leafletfix/leafletfix.css
+ create mode 100644 compositional_data_methods/libs/remark-css/default.css
+ create mode 100644 compositional_data_methods/libs/rstudio_leaflet/images/1px.png
+ create mode 100644 compositional_data_methods/libs/rstudio_leaflet/rstudio_leaflet.css
+ create mode 100644 compositional_data_methods/summer_jc_18.Rmd
+ create mode 100644 compositional_data_methods/summer_jc_18.html
+ create mode 100644 compositional_data_methods/summer_jc_18_files/figure-html/cars-1.png
+ create mode 100644 compositional_data_methods/ua-theme.css
+ create mode 100644 compositional_data_methods/ua1.png
+ create mode 100644 compositional_data_methods/ua2.png
+ create mode 100644 compositional_data_methods/ua3.png
+ create mode 100644 resources/UA.png
+ create mode 100644 resources/UAgrey.png
+ create mode 100644 resources/ua1.png
+ create mode 100644 resources/ua2.png
+ create mode 100644 resources/ua3.png
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git remote add origin master https://github.com/bmannakee/talks.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git remote add origin master https://github.com/bmannakee/talks.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[38Pcommit -m'initial commit'remote add origin master https://github.com/bmannakee/talks.git[1Phttps://github.com/bmannakee/talks.git[1Phttps://github.com/bmannakee/talks.git[1Phttps://github.com/bmannakee/talks.git[1Phttps://github.com/bmannakee/talks.git[1Phttps://github.com/bmannakee/talks.git[1Phttps://github.com/bmannakee/talks.git[1Phttps://github.com/bmannakee/talks.git
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git push -u origin master
+To https://github.com/bmannakee/talks.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/bmannakee/talks.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git pull
+warning: no common commits
+remote: Counting objects: 3, done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From https://github.com/bmannakee/talks
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git pullsh -u origin master
+To https://github.com/bmannakee/talks.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/bmannakee/talks.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git push -u origin masterll[K origin master
+From https://github.com/bmannakee/talks
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git puul[K[Kll
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git branch se[K[K00[K[K0[K-[K[K[Kh [K[K[K[K[K[K[K[K[K[K[Kgit pull origin
+You asked to pull from the remote 'origin', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git pull origin master
+From https://github.com/bmannakee/talks
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ rm -r [Kf .git
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ cd compositional_data_methods/
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ rm -rf .git
+]0;~/Desktop/talks/compositional_data_methodsBrians-MacBook-Air:compositional_data_methods bmannakee$ g[Kcd ..
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git init
+Initialized empty Git repository in /Users/bmannakee/Desktop/talks/.git/
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ rit[K[K[Kgit init [K[K[K[K[Kinit[3Pcd ..rm -rf .gitcd compositional_data_methods/[19Prm -rf .gitgit pull origin master[K[K origin master[3@sh -u[C[C[C[C[C[C[C[C[C[C[C[C[C[Cll[Ksh -u origin masterremote add origin https://github.com/bmannakee/talks.git
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git pull
+remote: Counting objects: 3, done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From https://github.com/bmannakee/talks
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git pull origin master
+From https://github.com/bmannakee/talks
+ * branch            master     -> FETCH_HEAD
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git add .
+warning: adding embedded git repository: UA_beamer_slides
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> UA_beamer_slides
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached UA_beamer_slides
+hint: 
+hint: See "git help submodule" for more information.
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git commit -m[K[K[K[K[K[K[K[K[K[K rm --cached UA_beamer_slides/
+error: the following file has staged content different from both the
+file and the HEAD:
+    UA_beamer_slides
+(use -f to force removal)
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git rm --cached UA_beamer_slides/[C[C[1@-[1@f[1@ 
+rm 'UA_beamer_slides'
+]0;~/Desktop/talksBrians-MacBook-Air:talks bmannakee$ git add .
