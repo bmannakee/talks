@@ -113,3 +113,71 @@ Unfortunately, rejecting $H_0$ here does not imply rejecting $E(X_1^{(1)}) = E(X
 
 ### The centered log-ratio transform and an equivalent hypothesis
 
+Aitchison(1982) proposed the log-ratio transform to deal with the non-independence of compositional variables.
+This paper uses an additional centering transform to generate a set of hypotheses that are identical to
+
+$$H_0: \; \mu_1 = \mu_2 \quad \textrm{versus} \quad H_1: \; \mu_1 \ne \mu_2.$$
+
+Define $Y^{(k)} = (Y_1^{(k)}, \dots, Y_{n_k}^{(k)})$ as
+
+$$Y_{ij}^{(k)} = \textrm{log} \{X_{ij}^{(k)} \big/ g(X_i^{(k)})\} \quad (i = 1, \dots, n_k;\;j = 1, \dots, p;\; k = 1,2),$$
+
+where $g(x) = (\prod_{i=1}^p x_i)^{1/p}$ is the geometric mean. This is just the log version of mean centering a vector. This transform is scale invariant (see it?).
+We can express this in matrix form as
+
+$$Y_i^{(k)} = G\;\textrm{log}\,X_i^{(k)},$$
+
+where $G = I_p - p^{-1}1_p1_p^T.$ 
+
+---
+# A testable hypothesis of compositional equivalence
+
+### The centered log-ratio transform and an equivalent hypothesis
+
+Let $\nu_k = E(Y_i^{(k)})$, and recognize that the scale-invariance of $Y^{(k)}$ means that we can replace $X^{(k)}$ with $W^{(k)}$ to get
+
+$$Y_i^{(k)} = G\,Z_i^{(k)}.$$
+
+This generates the equivalence
+
+$$\nu_k = G\,\mu_k,$$
+which implies that
+
+$$\nu_1 - \nu_2 = 0 \iff G\,(\mu_1 - \mu_2) = 0.$$
+
+The rank of $G$ is $p - 1$, and thus $Null(G) \equiv \{x \in \mathcal{R}^P\;:\;Gx = 0\} = \{c1_p\;:\;c \in \mathcal{R}\}.$<br \>
+As a result we can write
+
+$$\nu_1 - \nu_2 = 0 \iff \mu_1 - \mu_2 = c1_p \quad \textrm{for some} \; c \in \mathcal{R}$$
+
+Now we have a test that is a scale-invariant equivalent to $\mu_1 = \mu_2 + c1_p \quad \textrm{for some} \; c \in \mathcal{R}.$
+
+---
+
+# A two-sample test for compositional equivalence
+
+The authors suggest as a natural test statistic for 
+$$H_0: \; \nu_1 = \nu_2 \quad \textrm{versus} \quad H_1: \; \nu_1 \ne \nu_2,$$ 
+the difference in the sample means $\bar{Y}^{(1)}_j - \bar{Y}^{(1)}_j.$
+They go on to say that in the sparse setting, which they assert is the case in microbiomes, it is well known that tests based on maximum-type statistics are more powerful than other statistics (citing themselves). They devise the test statistic
+
+$$M_n = \frac{n_1n_2}{n_1 + n_2}\; \max_{1 \le j \le p} \frac{(\bar{Y}^{(1)}_j - \bar{Y}^{(1)}_j)^2}{\hat{\gamma}_{jj}},$$
+where $\hat{\gamma}_{jj}$ is the standard pooled sample variance, and $M_n$ is the standard multivariate Hotelling $T$ statistic for the dimension with the largest variance adjusted mean difference.
+
+They then show that $M_n$ asymptotically converges to a type-1 Gumbel (extreme value) distribution, and derive the level alpha test
+
+$$\Phi_\alpha = I(M_n \ge q_\alpha + 2\;\textrm{log}\,p - \textrm{log log}\,p).$$
+
+---
+# Discussion break
+
+### What do we think of the extreme value argument in practice?
+### Does it match with our experience of microbiome or RNAseq studies?
+
+```{r this_plot,echo=F,fig.height=5}
+library(ggplot2)
+load('week8stat.RDA')
+ggplot(final8stat,aes(Family,stat)) + geom_col() + 
+  labs(title="High fat vs low fat diet at week 8",subtitle="4 mice per group") +
+  theme_bw() + theme(axis.text.x=element_text(angle=90)) + ylab('Statistic')
+```
